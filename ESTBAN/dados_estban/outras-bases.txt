@@ -1,0 +1,110 @@
+
+Demografia e Renda:  Identificar correlações entre renda/população e comportamento bancário (p.ex., municípios com alta renda tendem a ter mais aplicações financeiras?). Inversamente correlacionado com capacidade de investimento — pode indicar exclusão financeira.
+    br_ibge_censo.demografia
+    br_ibge_pib.municipios
+    br_me_rais.microdados_estabelecimentos
+    br_mds_bolsa_familia.pagamentos
+    br_mds_cadunico.familias
+
+Educação: Educação tende a influenciar decisões financeiras e capacidade de investir.
+    br_inep_enem.microdados
+    br_inep_censo_escolar.escola
+
+Infraestrutura e Desenvolvimento: Índice de Desenvolvimento Humano Municipal (IDHM). O impacto de infraestrutura e condições socioeconômicas na bancarização e perfil de investimentos.
+    br_ibge_idhm.municipios
+    br_ipea_pobreza.municipios
+
+Tributação e Atividades Econômicas: Municípios com arrecadação eficiente tendem a ter melhor infraestrutura e acesso a serviços financeiros. 
+    br_firjan_ifgf.municipios
+    br_bd_dados.municipios_impostos
+
+Empreendedorismo: Pode indicar perfil mais ativo economicamente, influenciando o tipo de investimentos feitos (capital próprio vs. investimentos financeiros).
+    br_sebrae_empresas.microdados
+
+Acesso à Internet e Inclusão Digital: : Indicador de potencial acesso a plataformas digitais de investimento (ex: apps, home brokers).
+    br_anatel_telefonia_movel.acessos
+    br_anatel_banda_larga_fixa.acessos
+
+Consumo e Mobilidade: Atividade econômica correlacionada com capacidade de poupança/investimento.
+    br_ibge_pesquisa_mensal_servicos.municipios
+    br_ibge_pesquisa_mensal_comercio.municipios
+
+Saúde: Áreas com melhor saúde pública tendem a ter maior estabilidade socioeconômica, influenciando perfis de risco.
+    br_ms_cnes.estabelecimentos
+    br_ms_sinan.casos
+
+Agricultura e Atividades Rurais - ode identificar municípios com riqueza rural que investem em ativos mais conservadores (como poupança e crédito rural).
+     br_ibge_censo_agropecuario.estabelecimentos
+
+Desempenho Escolar:  Indicador da qualidade da educação básica, que se relaciona com conhecimento e comportamento financeiro no futuro.
+    br_inep_saeb.escolas
+
+Comportamento Político (extraído por interesse): Indiretamente pode influenciar políticas públicas, incentivos fiscais e visão de investimento.
+    br_tse_eleicoes.resultados_candidato_municipio
+
+Servidores Públicos: Servidores tendem a ter renda estável e acesso ao crédito, o que impacta no perfil de risco e tipos de investimento.
+    Portal da Transparência (controlado pela CGU).
+
+Beneficiários do INSS: Pode indicar presença de investidores mais conservadores (ex: renda fixa, previdência privada).
+    INSS (via DATAPREV ou Portal da Transparência).
+
+Produção Agropecuária: Perfil de investimento voltado para capital fixo, crédito agrícola, reserva em poupança, etc.
+    IBGE - Censo Agropecuário (br_ibge_censo_agropecuario)
+
+Tecnologia e Startups: ambientes com presença de tech tendem a concentrar investidores mais jovens, digitais e de perfil moderado/ousado.
+    StartupBase (https://startupbase.com.br/)
+
+Profissionais Qualificados (STEM e ensino superior): lta qualificação técnica pode indicar maior propensão a investimentos diversificados (ex: ações, criptomoedas).
+    NEP (br_inep_censo_superior)
+    RAIS (MTE) – Relação Anual de Informações Sociais
+
+Empregos por Setor: Permite estimar o perfil médio de investidor de cada cidade ou região com base no setor dominante.
+    RAIS/CAGED (via Ministério do Trabalho)
+
+Formalização de Empresas: Alta quantidade de MEIs pode indicar empreendedores, que têm perfil de investimento variado e não tradicional.
+    br_me_empresas.empresa (Base dos MEIs)
+
+Renda Média por Atividade Econômica: Ajuda a calibrar modelos de investimento de acordo com o poder de aporte mensal.
+    RAIS/CAGED
+    IBGE - PNAD Contínua
+
+Conselhos Profissionais (CRM, OAB, CREA etc.): Profissionais liberais tendem a ter alta renda, baixa estabilidade → perfil ideal para diversificação.
+    Cada conselho publica listas periodicamente
+
+Declarações de Imposto de Renda por Município: Total declarado de bens, rendimentos, número de declarantes → mapeia concentração de riqueza.
+     Receita Federal (Boletim IRPF por município)
+
+PIB Municipal: Medir o poder econômico geral do município. Pode ser proxy para volume de investimentos.
+    IBGE - Contas Regionais
+
+Militares e Forças Armadas: Estabilidade financeira + aposentadoria jovem → perfil ideal para consultoria e previdência.
+    Portal da Transparência (Servidores do Ministério da Defesa)
+
+Remuneração de Servidores Públicos (Detalhada): Foco em salários acima da média. Pode-se cruzar por órgão, cargo, estado.
+    Portal da Transparência
+
+Turismo e Fluxo de Passageiros: Cidades turísticas no verão → marketing direcionado com foco em liquidez e gasto extra.
+    MTur: Dados de ocupação hoteleira e fluxo turístico por cidade.
+    Infraero / ANAC: Passageiros por aeroporto
+    https://dados.turismo.gov.br
+
+Cartórios, Registro de Imóveis, Herança: Escrituras públicas → indicam venda de bens, doações, herança. Alta liquidez inesperada → excelente para oferta de produtos de renda variável ou consultoria patrimonial.
+    CNB (Colégio Notarial do Brasil) publica parte via: https://www.registrocivil.org.br/
+    IBGE (Transações imobiliárias - SIDRA)
+
+Arrecadação de Tributos Municipais: 
+    Receita Federal (Dados Abertos) - (IPTU, ITBI, ISS, etc.)
+
+Venda de Imóveis / Mercado Imobiliário: Venda de imóvel → liberação de grande capital → investidor novo ou com dinheiro "ocioso".
+    Secovi 
+    IBGE - Pesquisa de preços de imóveis (limitada)
+    Cartórios 
+
+
+
+
+* Fonte alternativa: CVM - Comissão de Valores Mobiliários
+Cadastro de investidores qualificados e distribuidores - Correlação direta com número de investidores por município, se disponível.
+
+
+
